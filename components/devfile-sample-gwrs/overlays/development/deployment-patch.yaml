@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gwrs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0086-tenant/ci10t-786-0086-app/devfile-sample-gwrs@sha256:38b1f486844da8e1355da13473ec607fdd0d3be651c4bd2427a669b72b6cb72d
+        name: my-nodejs
+        resources: {}
+status: {}
